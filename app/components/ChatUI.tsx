@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Send, Bot, User, ExternalLink, Database, Zap, RotateCcw } from "lucide-react";
+import { Send, Bot, User, Database, Zap, RotateCcw } from "lucide-react";
 
 type Message = { id: string; role: "user" | "assistant"; content: string };
 
@@ -102,11 +102,6 @@ export default function ChatUI() {
             </div>
           </div>
         </div>
-        <a href="https://github.com/itanvirt/demo-rag-chatbot" target="_blank" rel="noopener noreferrer"
-          className="flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-lg"
-          style={{ color: "#64748b", border: "1px solid var(--border)" }}>
-          <ExternalLink size={11} /> Source
-        </a>
       </header>
 
       {/* Pipeline */}
